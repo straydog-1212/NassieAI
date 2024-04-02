@@ -1,0 +1,10 @@
+personal notes 
+
+
+plan 
+use mozzila tts for tts
+use deep speech for speech recognition
+use ollama and stick to 13b models or less for 6700 and ryzen 7 7700x
+use webrtc to connect client device microphone with server
+probably gonna have to develop an app to let 
+
