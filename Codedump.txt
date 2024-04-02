@@ -1,0 +1,8 @@
+# gives a list of all the vcoders and tts available in mozzila tts
+echo "$(tts --list_models)" > ttsModelslist.txt 
+
+# Feed the path of the tts and vcoder into the following command and run this to make the sound
+tts --text "Text for TTS" \
+    --model_name "<type>/<language>/<dataset>/<model_name>" \
+    --vocoder_name "<type>/<language>/<dataset>/<model_name>" \
+    --out_path folder/to/save/output/
