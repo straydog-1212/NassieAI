@@ -1,12 +1,35 @@
-# Configuration file template
+# Application Configuration
 
-# Define configuration options here
-option1: 
-  # Description of option1
-  key1: value1
-  key2: value2
+# WebRTC configuration
+webrtc:
+  # WebRTC server settings
+  server:
+    host: localhost
+    port: 8000
+    # Additional WebRTC server options...
 
-option2: 
-  # Description of option2
-  key3: value3
-  key4: value4
+# Text-to-Speech (TTS) configuration
+tts:
+  # TTS engine settings
+  	TTSmodel: bootycheeks
+	Vocodermodel :
+    
+    # Additional TTS engine options...
+
+# Whisper configuration
+whisper:
+  # Whisper server settings
+  server:
+    host: example.com
+    port: 8080
+    # SSL/TLS configuration...
+    # Additional Whisper server options...
+
+# Ollama configuration
+ollama:
+  # Ollama service settings
+  service:
+    url: https://api.ollama.com
+    # Authentication token or credentials...
+    # Additional Ollama service options...
+
