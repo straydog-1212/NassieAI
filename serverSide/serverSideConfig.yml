@@ -1,0 +1,12 @@
+# Configuration file template
+
+# Define configuration options here
+option1: 
+  # Description of option1
+  key1: value1
+  key2: value2
+
+option2: 
+  # Description of option2
+  key3: value3
+  key4: value4

@@ -1,6 +1,7 @@
 #!/bin/bash
-apt install ffmpeg
-apt install
+
+sudo apt install ffmpeg
+sudo apt install libwebrtc-audio-processing1
 # Create directory for the project
 mkdir -p ~/nassieAI
 cd ~/nassieAI
@@ -17,3 +18,4 @@ source ~/githubApps/PersonalProjects/pythonVirtualEnvironment/bin/activate
 # Install dependencies using pip
 pip install tts
 pip install -U openai-whisper
+
