@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Prompt user for sudo password
 echo "Please enter your sudo password:"
 sudo -v
@@ -8,7 +9,7 @@ if [ $? -eq 0 ]; then
 	export DEBIAN_FRONTEND = noninteractive
 
 	# Installs dependencies on apt
-	sudo apt install -y ffmpeg libwebrtc-audio-processing1 python3 
+	sudo apt install -y ffmpeg libwebrtc-audio-processing1 python3 pip 
 
 	# Download and run OLLAMA installation script
 	curl -fsSL https://ollama.com/install.sh | sh
@@ -20,15 +21,15 @@ else
     exit 1
 fi
 
-	# Create directory for the project
-	mkdir -p ~/nassieAI
-	cd ~/nassieAI
+# Create directory for the project
+mkdir -p ~/nassieAI
+cd ~/nassieAI
 
-	# Set up virtual environment for Python
-	python -m venv ~/nassieAI
+# Set up virtual environment for Python
+python -m venv ~/nassieAI
 
-	# Activate the virtual environment
-	source ~/nassieAI/bin/activate
+# Activate the virtual environment
+source ~/nassieAI/bin/activate
 
 # Install dependencies using pip
 pip install tts
