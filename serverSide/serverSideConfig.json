@@ -1,0 +1,9 @@
+json
+{
+  "language": "en",
+  "threads": 4,
+  "prompt": "Hello, my name is Lulu. How can I help you today?",
+  "modelname": "tts_models/multilingual/multi-dataset/xtts_v2",
+  "vocoderModelName": "vocoder_models/universal/libri-tts/wavegrad",
+  "outputPath": "/home/lulu/githubApps/PersonalProjects/pythonVirtualEnviroment/practiceEnviroment"
+}
