@@ -1,0 +1,36 @@
+json
+{
+	"webrtc variables":{
+
+	},
+
+	"whisper variables":{
+		"language": "en",
+		"threads": 4,
+
+
+	},
+	"ollama variables":{
+		"modelname": "tts_models/multilingual/multi-dataset/xtts_v2",
+	},
+	"tts variables":{
+		"modelname": "tts_models/multilingual/multi-dataset/xtts_v2",
+		"vocoderModelName": "vocoder_models/universal/libri-tts/wavegrad",
+		"outputPath": "/home/lulu/githubApps/PersonalProjects/pythonVirtualEnviroment/practiceEnviroment",
+	}
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}
