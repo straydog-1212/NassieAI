@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Parse JSON using Python
-json_data=$(python -c 'import json; data=json.load(open("your_file.json")); print(data["language"]); print(data["modelname"]); print(data["threads"]); print(data["vocoderModelName"]); print(data["outputPath"])')
+json_data=$(python -c 'import json; data=json.load(open("./serverSideConfig.json")); print(data["language"]); print(data["modelname"]); print(data["threads"]); print(data["vocoderModelName"]); print(data["outputPath"])')
 
 # Split the output into separate variables
 read -r language modelname threads vocoderModelName outputPath <<< "$json_data"
