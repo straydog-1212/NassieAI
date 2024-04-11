@@ -1,11 +1,16 @@
 #! /bin/bash
 
-json_file = ./serverSideConfig.json
-modelname=$(jq -r '.ttsModelName' $json_file)
-lang=$(jq -r '.language' $json_file)
-threads=$(jq -r '.threads' $json_file)
-vocodername=$(jq -r '.vocoderModelName' $json_file)
-outpath=$(jq -r '.outputPath' $json_file)
+# Parse JSON using Python
+json_data=$(python -c 'import json; data=json.load(open("your_file.json")); print(data["language"]); print(data["modelname"]); print(data["threads"]); print(data["vocoderModelName"]); print(data["outputPath"])')
+
+# Split the output into separate variables
+read -r language modelname threads vocoderModelName outputPath <<< "$json_data"
+
+echo "Language: $language"
+echo "Model Name: $modelname"
+echo "Threads: $threads"
+echo "Vocoder Model Name: $vocoderModelName"
+echo "Output Path: $outputPath"
 
 
 whisper  --language "$lang" webrtcOuPut.ogg > whisperOutPut.txt
