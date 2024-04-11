@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 # Prompt user for sudo password
 echo "Please enter your sudo password:"
@@ -9,7 +9,7 @@ if [ $? -eq 0 ]; then
 	export DEBIAN_FRONTEND = noninteractive
 
 	# Installs dependencies on apt
-	sudo apt install -y ffmpeg libwebrtc-audio-processing1 python3 pip 
+	sudo apt install -y ffmpeg jq libwebrtc-audio-processing1 python3 pip 
 
 	# Download and run OLLAMA installation script
 	curl -fsSL https://ollama.com/install.sh | sh

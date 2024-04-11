@@ -1,5 +1,6 @@
-#! bin/bash/
-json_file = serverSideConfig.json
+#! /bin/bash
+
+json_file = ./serverSideConfig.json
 modelname=$(jq -r '.ttsModelName' $json_file)
 lang=$(jq -r '.language' $json_file)
 threads=$(jq -r '.threads' $json_file)
