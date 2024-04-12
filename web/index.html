@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with GPT</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+  <div class="container">
+    <!-- Chat history area (left side) -->
+    <div class="history-container">
+      <h2>Chat History</h2>
+      <div class="history-list">
+        <!-- Placeholder for chat history -->
+      </div>
+      <div class="login-section">
+        <h3>Login to save your chat history:</h3>
+        <!-- Login form can be added here -->
+      </div>
+    </div>
+
+    <!-- Chat area (right side) -->
+    <div class="chat-container">
+      <div id="chat" class="chatbox">
+        <!-- Placeholder text for chat messages -->
+      </div>
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="dropdown">
+      <button class="dropbtn">Options</button>
+      <div class="dropdown-content">
+        <div class="dropdown-item">
+          Language
+          <div class="sub-dropdown">
+            <div class="sub-dropdown-item">English</div>
+            <div class="sub-dropdown-item">Spanish</div>
+            <!-- Add more language options as needed -->
+          </div>
+        </div>
+        <div class="dropdown-item">
+          Model
+          <div class="sub-dropdown">
+            <div class="sub-dropdown-item">GPT-3</div>
+            <div class="sub-dropdown-item">GPT-4</div>
+            <!-- Add more model options as needed -->
+          </div>
+        </div>
+        <div class="dropdown-item">
+          Threads
+          <div class="sub-dropdown">
+            <div class="sub-dropdown-item">1</div>
+            <div class="sub-dropdown-item">2</div>
+            <!-- Add more thread options as needed -->
+          </div>
+        </div>
+        <div class="dropdown-item">
+          Text to Speech
+          <div class="sub-dropdown">
+            <div class="sub-dropdown-item">Vocoder Model</div>
+            <div class="sub-dropdown-item">TTS Model</div>
+            <!-- Add more TTS options as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>

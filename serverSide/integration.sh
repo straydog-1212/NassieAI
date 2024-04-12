@@ -1,5 +1,9 @@
 #! /bin/bash
 
+#activate python virtual enviroment
+source ~/.nassieAI/pythonVenv/bin/activate
+
+
 # Parse JSON using Python
 json_data=$(python -c 'import json; data=json.load(open("./serverSideConfig.json")); print(data["language"]); print(data["modelname"]); print(data["threads"]); print(data["vocoderModelName"]); print(data["outputPath"])')
 
